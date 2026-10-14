@@ -10,12 +10,16 @@ import {
   CheckCircle,
   Copy,
   Check,
+  Loader2,
+  AlertCircle,
 } from "lucide-react";
 import { GithubIcon, LinkedinIcon, WhatsAppIcon } from "@/components/common/Icons";
 
 export default function ContactPage() {
   const [copied, setCopied] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -30,9 +34,36 @@ export default function ContactPage() {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
+    setIsSubmitting(true);
+    setErrorMessage(null);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || "Failed to send message. Please try again.");
+      }
+
+      setIsSubmitted(true);
+    } catch (err: unknown) {
+      const msg =
+        err instanceof Error
+          ? err.message
+          : "Something went wrong. Please try again or reach out directly.";
+      setErrorMessage(msg);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -204,7 +235,17 @@ export default function ContactPage() {
                       Thank you for reaching out, {formData.fullName}. I have received your message and will review it promptly.
                     </p>
                     <button
-                      onClick={() => setIsSubmitted(false)}
+                      onClick={() => {
+                        setIsSubmitted(false);
+                        setFormData({
+                          fullName: "",
+                          email: "",
+                          phone: "",
+                          subject: "",
+                          message: "",
+                        });
+                        setErrorMessage(null);
+                      }}
                       className="btn-base btn-outline mt-4"
                     >
                       <span>Send Another Message</span>
@@ -300,13 +341,31 @@ export default function ContactPage() {
                       />
                     </div>
 
+                    {/* Error Feedback Message */}
+                    {errorMessage && (
+                      <div className="p-3.5 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 text-xs flex items-center gap-2.5">
+                        <AlertCircle className="w-4 h-4 shrink-0 text-red-400" />
+                        <span>{errorMessage}</span>
+                      </div>
+                    )}
+
                     {/* Submit - Unified Button Standards */}
                     <button
                       type="submit"
-                      className="btn-base btn-primary shadow-lg shadow-[var(--color-primary)]/25 w-full"
+                      disabled={isSubmitting}
+                      className="btn-base btn-primary shadow-lg shadow-[var(--color-primary)]/25 w-full disabled:opacity-60 disabled:cursor-not-allowed"
                     >
-                      <span>Send Message</span>
-                      <Send className="w-4 h-4" />
+                      {isSubmitting ? (
+                        <>
+                          <Loader2 className="w-4 h-4 animate-spin" />
+                          <span>Sending Message...</span>
+                        </>
+                      ) : (
+                        <>
+                          <span>Send Message</span>
+                          <Send className="w-4 h-4" />
+                        </>
+                      )}
                     </button>
                   </form>
                 )}

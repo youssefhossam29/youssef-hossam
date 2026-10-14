@@ -1,23 +1,36 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Projects & Engineering Case Studies | Youssef Hossam — Backend & Web Architect",
+  title: "Projects & Portfolio | Laravel Web Apps, E-Commerce & WordPress Solutions",
   description:
-    "Explore 17+ live production systems engineered by Youssef Hossam: high-concurrency Laravel REST APIs, real-time marketplace platforms, custom WooCommerce architectures, and scalable LMS solutions.",
+    "Explore live web development projects including custom PHP/Laravel applications, RESTful APIs, WooCommerce stores, and LMS platforms built for global clients.",
   keywords: [
+    "Laravel Web Apps",
+    "E-Commerce Solutions",
+    "WordPress Solutions",
+    "Custom PHP Applications",
+    "RESTful APIs",
+    "WooCommerce Stores",
+    "LMS Platforms",
     "Laravel Projects",
     "PHP Backend Portfolio",
-    "RESTful API Case Studies",
-    "WooCommerce Development",
-    "Paymob Integration",
-    "Stripe Gateway",
     "Youssef Hossam Projects",
-    "Custom Web Applications Egypt",
   ],
+  alternates: {
+    canonical: "/projects",
+  },
   openGraph: {
-    title: "Projects & Engineering Case Studies | Youssef Hossam",
+    title: "Projects & Portfolio | Laravel Web Apps, E-Commerce & WordPress Solutions",
     description:
-      "Explore 17+ verified production systems: scalable Laravel backends, real-time platforms, and high-converting commercial architectures.",
+      "Explore live web development projects including custom PHP/Laravel applications, RESTful APIs, WooCommerce stores, and LMS platforms built for global clients.",
+    url: "/projects",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Projects & Portfolio | Laravel Web Apps, E-Commerce & WordPress Solutions",
+    description:
+      "Explore live web development projects including custom PHP/Laravel applications, RESTful APIs, WooCommerce stores, and LMS platforms built for global clients.",
   },
 };
 

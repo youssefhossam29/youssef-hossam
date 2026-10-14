@@ -510,5 +510,27 @@ body {
   border: 1px solid rgba(16, 185, 129, 0.28);
 }
 
+/* ==========================================
+   TYPING INDICATOR CURSOR
+   Realistic terminal/editor blinking animation
+   ========================================== */
+@keyframes cursorBlink {
+  0%, 60% {
+    opacity: 1;
+  }
+  65%, 95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  vertical-align: baseline;
+  animation: cursorBlink 0.85s infinite;
+}
+
 
 

@@ -9,15 +9,17 @@ export const siteConfig = {
   // Brand & Identity
   brand: {
     name: "Youssef Hossam",
+    fullName: "Youssef Hossam Eldin",
     firstName: "Youssef",
     lastName: "Hossam",
     title: "Software Engineer",
-    specialty: "Backend Engineer (Laravel & PHP) & WordPress Specialist",
+    specialty: "Software Engineer (Laravel / WordPress)",
     shortBio:
-      "Passionate Software Engineer dedicated to engineering scalable web architectures with Laravel, high-throughput APIs, and high-converting WordPress platforms.",
+      "Software Engineer (Laravel/WordPress) specializing in building scalable RESTful APIs, database architectures, and real-time web applications using PHP, Laravel, and MySQL. Experienced in integrating external services and payment gateways, and proficient in developing advanced LMS and e-commerce platforms.",
+    militaryStatus: "Completed Military Service",
     slogan:
-      "Engineering growth. From WordPress to Laravel — Building scalable backends and high-converting web solutions.",
-    location: "Alexandria, Egypt (Available for Remote & Relocation)",
+      "Engineering growth — building scalable Laravel Web Applications and high-converting WordPress solutions.",
+    location: "Alexandria, Egypt",
     email: "youssefhossam2902@gmail.com",
     phone: "(+20) 1279932792",
     url: "https://youssefhossam.dev",
@@ -61,6 +63,10 @@ export const siteConfig = {
     badgeDual: "/logo/youssef-badge-dual-new.png",
     // Reference / Hero Art (Youssef Hossam Modular Grid Portrait)
     heroArt: "/images/youssef-hero-grid.png",
+    // Favicons
+    favicon: "/favicon.ico",
+    faviconApple: "/apple-touch-icon.png",
+    faviconSvg: "/icon.svg",
   },
 
   // Design Tokens (Colors, Typography, Glassmorphism, Radii)

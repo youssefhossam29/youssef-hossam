@@ -13,7 +13,6 @@ import TechMarquee from "@/components/common/TechMarquee";
 import {
   Download,
   GraduationCap,
-  Sparkles,
   Calendar,
   CheckCircle2,
   ArrowRight,
@@ -48,7 +47,7 @@ export default function AboutPage() {
                   style={{ padding: "8px 20px" }}
                   className="rounded-xl text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/25 cursor-pointer transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-emerald-500/25 hover:border-white/50 hover:shadow-[0_0_24px_rgba(16,185,129,0.5),inset_0_0_12px_rgba(16,185,129,0.3)]"
                 >
-                  Open to New Opportunities
+                  Available for Opportunities
                 </span>
                 <span
                   style={{ padding: "8px 20px" }}
@@ -73,16 +72,14 @@ export default function AboutPage() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-primary-light)] to-[var(--color-accent)]">
                   Youssef Hossam
                 </span>
-                <br />
-                Backend & WordPress Specialist
               </h1>
 
               <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed">
-                I am a Software Engineer based in Alexandria, Egypt. I graduated from the Faculty of Science, Alexandria University with a degree in Computer Science and Statistics, achieving a GPA of <strong className="text-white">3.6 / 4.0 (Excellent with Honors)</strong>.
+                A Software Engineer based in Alexandria, Egypt. Graduated from Alexandria University, Faculty of Science, Department of Computer Science and Statistics, with a <strong className="text-white">Bachelor of Computer Science (GPA: 3.6 / 4.0)</strong>.
               </p>
 
               <p className="text-sm sm:text-base text-[var(--color-text-muted)] leading-relaxed">
-                Over the course of my career at Gen-Tech and my training at the Information Technology Institute (ITI), I have designed and delivered scalable backend RESTful architectures, optimized database performance, and crafted over 12 high-converting commercial e-commerce platforms. My engineering philosophy combines clean code, reliable testability, and measurable business growth.
+                Specializing in building scalable Laravel web applications, robust RESTful APIs, and custom WordPress solutions—including E-Commerce stores, LMS platforms, and corporate websites—built for businesses looking to scale with confidence.
               </p>
 
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-5 pt-2">

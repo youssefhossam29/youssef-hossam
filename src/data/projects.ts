@@ -128,7 +128,6 @@ export const projectsData: Project[] = [
       "WordPress",
       "WooCommerce",
       "Elementor",
-      "Elementor Pro",
       "WhatsApp Chat Integration",
     ],
     isFeatured: false,
@@ -205,7 +204,6 @@ export const projectsData: Project[] = [
     tools: [
       "WordPress",
       "Elementor",
-      "Elementor Pro",
       "Tutor LMS",
       "WooCommerce",
       "ACF",
@@ -231,7 +229,6 @@ export const projectsData: Project[] = [
     tools: [
       "WordPress",
       "Elementor",
-      "Elementor Pro",
       "Edwiser Bridge (Moodle Integration)",
       "WooCommerce",
       "FunnelKit Cart",
@@ -239,7 +236,7 @@ export const projectsData: Project[] = [
       "Polylang",
       "GSheet Connector for Forms",
     ],
-    isFeatured: true,
+    isFeatured: false,
   },
   {
     id: "qalam",
@@ -259,7 +256,6 @@ export const projectsData: Project[] = [
     tools: [
       "WordPress",
       "Elementor",
-      "Elementor Pro",
       "Google Reviews Integration",
       "Instagram Feed",
     ],
@@ -283,7 +279,6 @@ export const projectsData: Project[] = [
     tools: [
       "WordPress",
       "Elementor",
-      "Elementor Pro",
       "ACF",
       "Polylang",
       "Amelia Booking",
@@ -294,6 +289,40 @@ export const projectsData: Project[] = [
     ],
     isFeatured: false,
   },
+  {
+    id: "aqlam",
+    name: "Aqlam",
+    title: "Aqlam",
+    category: "E-Learning & LMS",
+    service: "E-Learning & LMS",
+    location: "UAE",
+    country: "UAE",
+    industry: "Education & EdTech",
+    image: "/projects/aqlam-org.png",
+    link: "aqlam.org",
+    liveUrl: "https://aqlam.org",
+    desc: "UAE-based K-12 EdTech platform featuring Daily.co live virtual classrooms, gamified learning via myCred, and recurring subscriptions with Tabby and Stripe payments.",
+    description:
+      "UAE-based K-12 EdTech platform featuring Daily.co live virtual classrooms, gamified learning via myCred, and recurring subscriptions with Tabby and Stripe payments.",
+    tools: [
+      "WordPress",
+      "Elementor",
+      "ACF",
+      "Polylang",
+      "Amelia Booking",
+      "Daily.co Integration",
+      "Tabby Payments",
+      "Stripe Payments",
+      "WooCommerce",
+      "Better Messages",
+      "FunnelKit Checkout",
+      "Social Login",
+      "WooCommerce Subscription",
+      "myCred Points",
+    ],
+    isFeatured: true,
+  },
+
 
   // 4. Corporate & Portfolio
   {
@@ -314,7 +343,6 @@ export const projectsData: Project[] = [
     tools: [
       "WordPress",
       "Elementor",
-      "Elementor Pro",
       "Polylang",
       "ACF",
     ],
@@ -356,7 +384,6 @@ export const projectsData: Project[] = [
     tools: [
       "WordPress",
       "Elementor",
-      "Elementor Pro",
       "JetEngine",
       "Polylang",
       "GSheet Connector for Elementor Forms",
@@ -381,7 +408,6 @@ export const projectsData: Project[] = [
     tools: [
       "WordPress",
       "Elementor",
-      "Elementor Pro",
       "Polylang",
       "ACF",
     ],
@@ -405,7 +431,6 @@ export const projectsData: Project[] = [
     tools: [
       "WordPress",
       "Elementor",
-      "Elementor Pro",
       "ACF",
       "Polylang",
       "GSheet Connector for Forms",
@@ -430,7 +455,6 @@ export const projectsData: Project[] = [
     tools: [
       "WordPress",
       "Elementor",
-      "Elementor Pro",
       "ACF",
       "Polylang",
       "GSheet Connector for Forms",
@@ -453,7 +477,7 @@ export const projectsData: Project[] = [
     desc: "Single-page promotional landing page for a self-discovery book, designed to drive Amazon book sales and facilitate one-on-one author consultations.",
     description:
       "Single-page promotional landing page for a self-discovery book, designed to drive Amazon book sales and facilitate one-on-one author consultations.",
-    tools: ["WordPress", "Elementor", "Elementor Pro"],
+    tools: ["WordPress", "Elementor"],
     isFeatured: false,
   },
 ];

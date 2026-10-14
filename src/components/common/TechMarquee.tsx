@@ -5,16 +5,17 @@ import { Server, Database, Layout, ShieldCheck, Code2, Zap } from "lucide-react"
 
 const tickerLogos = [
   { name: "Laravel", icon: Server },
-  { name: "PHP 8+", icon: Code2 },
+  { name: "PHP", icon: Code2 },
+  { name: "RESTful APIs", icon: Server },
   { name: "MySQL", icon: Database },
+  { name: "WebSockets", icon: Zap },
   { name: "WordPress", icon: Layout },
   { name: "WooCommerce", icon: Zap },
-  { name: "Redis", icon: Zap },
-  { name: "RESTful APIs", icon: Server },
-  { name: "Docker", icon: Server },
-  { name: "WebSockets", icon: Zap },
-  { name: "ACF Pro", icon: Code2 },
-  { name: "OWASP Security", icon: ShieldCheck },
+  { name: "Payment Gateways", icon: ShieldCheck },
+  { name: "MinIO/AWS S3", icon: Server },
+  { name: "OAuth", icon: ShieldCheck },
+  { name: "Postman", icon: Code2 },
+  { name: "Git", icon: Code2 },
 ];
 
 export default function TechMarquee() {

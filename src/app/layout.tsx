@@ -7,21 +7,24 @@ import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.brand.url),
-  title: "Youssef Hossam — Backend Engineer | Laravel, PHP & WordPress",
+  title: "Youssef Hossam — Software Engineer | Laravel, PHP & WordPress",
   description:
-    "Backend Engineer specializing in Laravel, PHP, RESTful APIs, and custom WordPress & WooCommerce architectures. Building scalable backend solutions and high-converting commercial web platforms.",
+    "Software Engineer (Laravel/WordPress) specializing in building scalable RESTful APIs, database architectures, and real-time web applications using PHP, Laravel, and MySQL.",
   keywords: [
     "Youssef Hossam",
     "Software Engineer",
     "Backend Developer",
     "Laravel Developer",
     "PHP Developer",
-    "WordPress Specialist",
-    "WooCommerce",
+    "WordPress Developer",
     "RESTful APIs",
-    "MySQL Database Optimization",
-    "Redis Caching",
-    "Web Development Alexandria Egypt",
+    "WebSockets",
+    "MySQL",
+    "WooCommerce",
+    "Payment Gateways",
+    "MinIO/AWS S3",
+    "OAuth",
+    "Alexandria Egypt",
   ],
   authors: [{ name: siteConfig.brand.name }],
   creator: siteConfig.brand.name,
@@ -52,6 +55,18 @@ export const metadata: Metadata = {
       "Backend Engineer specializing in scalable Laravel APIs, database architecture, and custom high-converting WordPress & WooCommerce platforms.",
     images: ["/images/youssef-hero-grid.png"],
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -63,7 +78,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: siteConfig.brand.name,
-    jobTitle: "Backend Software Engineer",
+    jobTitle: "Software Engineer (Laravel / WordPress)",
     description: siteConfig.brand.shortBio,
     url: siteConfig.brand.url,
     sameAs: [siteConfig.social.github, siteConfig.social.linkedin],
@@ -71,11 +86,21 @@ export default function RootLayout({
       "PHP",
       "Laravel",
       "RESTful APIs",
+      "WebSockets",
       "MySQL",
-      "Redis",
+      "RBAC",
+      "MinIO/AWS S3",
+      "OAuth",
+      "Payment Gateways",
       "WordPress",
+      "Custom Plugin Development",
       "WooCommerce",
-      "Docker",
+      "Polylang",
+      "JetEngine",
+      "Amelia LMS",
+      "Tutor LMS",
+      "Git",
+      "Postman",
     ],
   };
 

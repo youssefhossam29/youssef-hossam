@@ -5,6 +5,7 @@ import { siteConfig } from "@/config/site";
 import { projectsData } from "@/data/projects";
 import ProjectCard from "@/components/common/ProjectCard";
 import TechMarquee from "@/components/common/TechMarquee";
+import TypewriterTitle from "@/components/home/TypewriterTitle";
 import {
   ArrowRight,
   Download,
@@ -17,7 +18,7 @@ import {
 import { GithubIcon, LinkedinIcon, WhatsAppIcon } from "@/components/common/Icons";
 
 export default function HomePage() {
-  const featuredOrder = ["mawrid", "geniusonlineeducation", "hawaaeg"];
+  const featuredOrder = ["mawrid", "aqlam", "hawaaeg"];
   const featuredProjects = featuredOrder
     .map((id) => projectsData.find((p) => p.id === id))
     .filter((p): p is (typeof projectsData)[number] => Boolean(p));
@@ -43,20 +44,13 @@ export default function HomePage() {
               </div>
 
               {/* Headline */}
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
-                Hi, I&apos;m{" "}
-                <span className="text-white">Youssef Hossam</span>
-                <span className="text-slate-400 font-normal"> — </span>
-                <br className="hidden sm:inline" />
-                a{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-primary-light)] to-[var(--color-accent)] font-extrabold">
-                  Backend Engineer (Laravel & PHP)
-                </span>
+              <h1 className="w-full">
+                <TypewriterTitle />
               </h1>
 
               {/* Bio / Description (High contrast, easy to read) */}
               <p className="text-base sm:text-lg text-slate-300 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
-                Engineering robust server-side architectures, fault-tolerant RESTful APIs, and custom high-converting WordPress & WooCommerce systems delivering measurable commercial growth.
+                Software Engineer specializing in building scalable Laravel web applications, robust RESTful APIs, and custom WordPress solutions—including E-Commerce stores, LMS platforms, and corporate websites—built for businesses looking to scale with confidence.
               </p>
 
               {/* CTA Buttons: Keep In Touch (Primary) & View CV (Secondary) */}
@@ -141,13 +135,13 @@ export default function HomePage() {
                   />
                 </div>
 
-                {/* Floating Badge 1: Laravel Expert */}
+                {/* Floating Badge 1: Laravel */}
                 <div
                   style={{ padding: "10px" }}
                   className="absolute -left-3 sm:-left-7 top-8 sm:top-12 z-20 rounded-2xl btn-base btn-outline backdrop-blur-xl flex items-center gap-2.5 text-xs sm:text-sm font-bold text-white whitespace-nowrap"
                 >
                   <span className="w-2.5 h-2.5 rounded-full bg-[#FF2D20] shadow-[0_0_12px_#FF2D20] shrink-0" />
-                  <span className="tracking-wide">Laravel Expert</span>
+                  <span className="tracking-wide">Laravel</span>
                 </div>
 
                 {/* Floating Badge 2: WordPress & WooCommerce */}
@@ -197,7 +191,7 @@ export default function HomePage() {
                   Backend Architecture & RESTful APIs
                 </h3>
                 <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
-                  Engineering fault-tolerant server-side systems with Laravel and PHP. Focusing on relational database optimization, Redis cache hierarchies, and airtight security authentication.
+                  Engineering scalable server-side systems with Laravel and PHP. Focusing on relational database architectures with MySQL, real-time communication via WebSockets, and secure API workflows.
                 </p>
               </div>
               <ul
@@ -205,10 +199,10 @@ export default function HomePage() {
                 className="flex flex-col gap-4 border-t border-white/8 text-sm text-slate-200"
               >
                 {[
-                  "High-throughput RESTful APIs with automated test coverage",
-                  "Relational MySQL schema architecture & query optimization",
-                  "Redis caching hierarchies, queue jobs & real-time WebSockets",
-                  "OWASP security hardening & JWT / Sanctum authentication",
+                  "Scalable RESTful APIs documented via Swagger/OpenAPI",
+                  "Relational MySQL database architectures & query optimization",
+                  "Real-time communication (chat & notifications) via Laravel Reverb & WebSockets",
+                  "Third-party integrations: Paymob gateway, MinIO/AWS S3 & OAuth",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3.5 leading-relaxed">
                     <span className="p-1.5 rounded-lg bg-emerald-500/15 text-emerald-400 shrink-0 border border-emerald-500/20 mt-0.5">
@@ -230,10 +224,10 @@ export default function HomePage() {
                   <Layout className="w-7 h-7" />
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-white">
-                  Custom WordPress & WooCommerce Stores
+                  WordPress, WooCommerce & LMS Platforms
                 </h3>
                 <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
-                  Crafting bespoke, blazing-fast WordPress solutions without bloated builder plugins. Engineered for maximum checkout conversion, seamless payment APIs, and 90+ PageSpeed.
+                  Designing responsive, high-performing WordPress solutions. Implementing multilingual architectures, custom plugin development, and advanced LMS & e-commerce platforms.
                 </p>
               </div>
               <ul
@@ -241,10 +235,10 @@ export default function HomePage() {
                 className="flex flex-col gap-4 border-t border-white/8 text-sm text-slate-200"
               >
                 {[
-                  "Custom theme & plugin development with clean, scalable PHP",
-                  "High-conversion WooCommerce checkouts & payment gateway APIs",
-                  "Dynamic content architectures with ACF Pro & REST endpoints",
-                  "Core Web Vitals optimization achieving 90+ speed scores",
+                  "Custom WordPress plugin development extending specialized business needs",
+                  "Advanced LMS & e-commerce platforms (WooCommerce, Amelia, Tutor LMS)",
+                  "Multilingual architectures & dynamic content (Custom Post Types & Loops)",
+                  "Seamless checkout & global payment gateway integrations (Paymob, Stripe, Tabby)",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3.5 leading-relaxed">
                     <span className="p-1.5 rounded-lg bg-emerald-500/15 text-emerald-400 shrink-0 border border-emerald-500/20 mt-0.5">

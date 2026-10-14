@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { projectsData, projectCategories, ProjectCategory } from "@/data/projects";
 import ProjectCard from "@/components/common/ProjectCard";
-import { Sparkles } from "lucide-react";
 
 export default function ProjectsPage() {
   const [selectedCategory, setSelectedCategory] = useState<ProjectCategory>("All");
@@ -28,15 +27,15 @@ export default function ProjectsPage() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
-              Production-Grade Backends &{" "}
+              Web Applications &{" "}
               <br className="hidden sm:inline" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-primary-light)] via-sky-400 to-[var(--color-accent)]">
-                High-Converting Web Platforms
+                Digital Platforms
               </span>
             </h1>
 
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-3xl mx-auto font-normal">
-              A verified portfolio of 17+ live systems engineered for reliability and revenue. From high-concurrency Laravel REST APIs, real-time WebSockets, and payment gateways (Paymob &amp; Stripe) to bespoke WooCommerce and LMS architectures built for speed, security, and scale.
+              Explore live production projects spanning custom Laravel web apps, E-Commerce stores, corporate websites, and LMS platforms that turn complex business needs into seamless digital experiences.
             </p>
           </div>
 
@@ -53,17 +52,15 @@ export default function ProjectsPage() {
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`btn-base ${
-                    isSelected
-                      ? "btn-primary shadow-lg shadow-[var(--color-primary)]/25 scale-105"
-                      : "btn-outline text-[var(--color-text-muted)]"
-                  }`}
+                  className={`btn-base ${isSelected
+                    ? "btn-primary shadow-lg shadow-[var(--color-primary)]/25 scale-105"
+                    : "btn-outline text-[var(--color-text-muted)]"
+                    }`}
                 >
                   <span>{category}</span>
                   <span
-                    className={`px-2 py-0.5 rounded-full text-xs bg-transparent border-0 ${
-                      isSelected ? "text-white font-bold" : "text-[var(--color-text-dim)]"
-                    }`}
+                    className={`px-2 py-0.5 rounded-full text-xs bg-transparent border-0 ${isSelected ? "text-white font-bold" : "text-[var(--color-text-dim)]"
+                      }`}
                   >
                     {count}
                   </span>
