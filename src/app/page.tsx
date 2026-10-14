@@ -17,7 +17,10 @@ import {
 import { GithubIcon, LinkedinIcon, WhatsAppIcon } from "@/components/common/Icons";
 
 export default function HomePage() {
-  const featuredProjects = projectsData.filter((p) => p.isFeatured).slice(0, 3);
+  const featuredOrder = ["mawrid", "geniusonlineeducation", "hawaaeg"];
+  const featuredProjects = featuredOrder
+    .map((id) => projectsData.find((p) => p.id === id))
+    .filter((p): p is (typeof projectsData)[number] => Boolean(p));
 
   return (
     <div className="relative overflow-hidden">

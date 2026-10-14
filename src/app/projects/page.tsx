@@ -24,15 +24,19 @@ export default function ProjectsPage() {
               style={{ padding: "8px 20px" }}
               className="inline-flex items-center gap-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-[var(--color-primary)]/10 text-[var(--color-primary-light)] border border-[var(--color-primary)]/25 cursor-pointer transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[var(--color-primary)]/25 hover:border-white/50 hover:shadow-[0_0_24px_rgba(59,130,246,0.5),inset_0_0_12px_rgba(59,130,246,0.3)]"
             >
-              <span>Proven Track Record</span>
+              <span>Production Systems & Case Studies</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight">
-              Real Projects Driving Tangible Business Outcomes
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+              Production-Grade Backends &{" "}
+              <br className="hidden sm:inline" />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-primary-light)] via-sky-400 to-[var(--color-accent)]">
+                High-Converting Web Platforms
+              </span>
             </h1>
 
-            <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed max-w-2xl mx-auto">
-              Live production platforms, high-conversion ecommerce storefronts, and bespoke digital experiences engineered for forward-moving businesses.
+            <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-3xl mx-auto font-normal">
+              A verified portfolio of 17+ live systems engineered for reliability and revenue. From high-concurrency Laravel REST APIs, real-time WebSockets, and payment gateways (Paymob &amp; Stripe) to bespoke WooCommerce and LMS architectures built for speed, security, and scale.
             </p>
           </div>
 
