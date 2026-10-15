@@ -23,7 +23,7 @@ export default function ProjectsPage() {
               style={{ padding: "8px 20px" }}
               className="inline-flex items-center gap-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-[var(--color-primary)]/10 text-[var(--color-primary-light)] border border-[var(--color-primary)]/25 cursor-pointer transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[var(--color-primary)]/25 hover:border-white/50 hover:shadow-[0_0_24px_rgba(59,130,246,0.5),inset_0_0_12px_rgba(59,130,246,0.3)]"
             >
-              <span>Production Systems & Case Studies</span>
+              <span>Case Studies</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
@@ -35,8 +35,7 @@ export default function ProjectsPage() {
             </h1>
 
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-3xl mx-auto font-normal">
-              Explore live production projects spanning custom Laravel web apps, E-Commerce stores, corporate websites, and LMS platforms that turn complex business needs into seamless digital experiences.
-            </p>
+              Live production projects across custom Laravel web apps, E-Commerce stores, corporate sites, and LMS platforms—built to turn complex needs into seamless digital experiences.            </p>
           </div>
 
           {/* Category Filter (Padding: 30px, 20px gap between category elements) */}

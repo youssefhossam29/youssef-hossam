@@ -77,15 +77,15 @@ export default function ContactPage() {
               style={{ padding: "8px 20px" }}
               className="self-center w-fit inline-flex items-center gap-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-[var(--color-primary)]/10 text-[var(--color-primary-light)] border border-[var(--color-primary)]/25 cursor-pointer transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[var(--color-primary)]/25 hover:border-white/50 hover:shadow-[0_0_24px_rgba(59,130,246,0.5),inset_0_0_12px_rgba(59,130,246,0.3)]"
             >
-              <span>Start a Conversation</span>
+              <span>GET IN TOUCH</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight">
-              Let&apos;s Talk For Your Next Projects
+              Let&apos;s Talk About Your Next Project
             </h1>
 
             <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed max-w-3xl mx-auto">
-              Whether you have a technical opportunity, need architectural consulting for your backend, or want to launch a high-converting web store, I&apos;m ready to connect.
+              Whether you&apos;re hiring a Backend Engineer, need a custom web application, or want to build an E-Commerce or LMS platform—I&apos;m ready to help you scale with confidence.
             </p>
           </div>
 
@@ -98,11 +98,8 @@ export default function ContactPage() {
             {/* Left: Contact Info (Padding: 20px, Gap: 20px) */}
             <div className="lg:col-span-5 flex flex-col gap-5">
               <div style={{ padding: "20px" }} className="glass-card flex flex-col gap-5">
-                <div className="flex flex-col gap-2">
-                  <h2 className="text-2xl font-bold text-white mb-1">Contact Information</h2>
-                  <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">
-                    Feel free to reach out via email or phone. I prioritize fast responses, typically replying within a few hours.
-                  </p>
+                <div className="flex flex-col">
+                  <h2 className="text-2xl font-bold text-white">Contact Information</h2>
                 </div>
 
                 <div className="flex flex-col gap-4">
@@ -119,7 +116,7 @@ export default function ContactPage() {
                         Location
                       </h4>
                       <p className="text-sm font-semibold text-white">
-                        {siteConfig.brand.location}
+                        Alexandria, Egypt (Available for Remote &amp; Relocation)
                       </p>
                     </div>
                   </div>
@@ -170,7 +167,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h4 className="text-xs uppercase font-bold tracking-wider text-[var(--color-text-dim)] mb-1">
-                        Phone & WhatsApp
+                        Phone &amp; WhatsApp
                       </h4>
                       <a
                         href={siteConfig.brand.whatsappUrl}
@@ -253,93 +250,75 @@ export default function ContactPage() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="flex flex-col gap-5">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <h3 className="text-xl font-bold text-white">Send a Message</h3>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {/* Full Name */}
-                      <div className="flex flex-col gap-2">
-                        <label htmlFor="fullName" className="text-xs font-bold uppercase tracking-wider text-[var(--color-text-muted)]">
-                          Full Name <span className="text-[var(--color-primary-light)]">*</span>
-                        </label>
-                        <input
-                          id="fullName"
-                          type="text"
-                          required
-                          placeholder="e.g. John Doe"
-                          value={formData.fullName}
-                          onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                          style={{ padding: "10px 16px", borderRadius: "14px" }}
-                          className="w-full rounded-xl bg-white/5 border border-white/10 text-white placeholder-[var(--color-text-dim)] focus:outline-none focus:border-[var(--color-primary-light)] focus:ring-1 focus:ring-[var(--color-primary-light)] transition-all text-sm"
-                        />
-                      </div>
+                      <input
+                        id="fullName"
+                        type="text"
+                        required
+                        placeholder="Full Name"
+                        aria-label="Full Name"
+                        value={formData.fullName}
+                        onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                        style={{ padding: "12px 18px", borderRadius: "14px" }}
+                        className="w-full rounded-xl bg-white/5 border border-white/10 text-white placeholder-[var(--color-text-dim)] focus:outline-none focus:border-[var(--color-primary-light)] focus:ring-1 focus:ring-[var(--color-primary-light)] transition-all text-sm"
+                      />
 
                       {/* Email */}
-                      <div className="flex flex-col gap-2">
-                        <label htmlFor="email" className="text-xs font-bold uppercase tracking-wider text-[var(--color-text-muted)]">
-                          Email Address <span className="text-[var(--color-primary-light)]">*</span>
-                        </label>
-                        <input
-                          id="email"
-                          type="email"
-                          required
-                          placeholder="john@company.com"
-                          value={formData.email}
-                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                          style={{ padding: "10px 16px", borderRadius: "14px" }}
-                          className="w-full rounded-xl bg-white/5 border border-white/10 text-white placeholder-[var(--color-text-dim)] focus:outline-none focus:border-[var(--color-primary-light)] focus:ring-1 focus:ring-[var(--color-primary-light)] transition-all text-sm"
-                        />
-                      </div>
+                      <input
+                        id="email"
+                        type="email"
+                        required
+                        placeholder="Email"
+                        aria-label="Email"
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        style={{ padding: "12px 18px", borderRadius: "14px" }}
+                        className="w-full rounded-xl bg-white/5 border border-white/10 text-white placeholder-[var(--color-text-dim)] focus:outline-none focus:border-[var(--color-primary-light)] focus:ring-1 focus:ring-[var(--color-primary-light)] transition-all text-sm"
+                      />
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {/* Phone */}
-                      <div className="flex flex-col gap-2">
-                        <label htmlFor="phone" className="text-xs font-bold uppercase tracking-wider text-[var(--color-text-muted)]">
-                          Phone / WhatsApp
-                        </label>
-                        <input
-                          id="phone"
-                          type="tel"
-                          placeholder="+1 (555) 000-0000"
-                          value={formData.phone}
-                          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                          style={{ padding: "10px 16px", borderRadius: "14px" }}
-                          className="w-full rounded-xl bg-white/5 border border-white/10 text-white placeholder-[var(--color-text-dim)] focus:outline-none focus:border-[var(--color-primary-light)] focus:ring-1 focus:ring-[var(--color-primary-light)] transition-all text-sm"
-                        />
-                      </div>
+                      <input
+                        id="phone"
+                        type="tel"
+                        placeholder="+20 10 1234 5678"
+                        aria-label="Phone / WhatsApp"
+                        value={formData.phone}
+                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        style={{ padding: "12px 18px", borderRadius: "14px" }}
+                        className="w-full rounded-xl bg-white/5 border border-white/10 text-white placeholder-[var(--color-text-dim)] focus:outline-none focus:border-[var(--color-primary-light)] focus:ring-1 focus:ring-[var(--color-primary-light)] transition-all text-sm"
+                      />
 
                       {/* Subject */}
-                      <div className="flex flex-col gap-2">
-                        <label htmlFor="subject" className="text-xs font-bold uppercase tracking-wider text-[var(--color-text-muted)]">
-                          Subject <span className="text-[var(--color-primary-light)]">*</span>
-                        </label>
-                        <input
-                          id="subject"
-                          type="text"
-                          required
-                          placeholder="e.g. Backend Architecture Consultation"
-                          value={formData.subject}
-                          onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                          style={{ padding: "10px 16px", borderRadius: "14px" }}
-                          className="w-full rounded-xl bg-white/5 border border-white/10 text-white placeholder-[var(--color-text-dim)] focus:outline-none focus:border-[var(--color-primary-light)] focus:ring-1 focus:ring-[var(--color-primary-light)] transition-all text-sm"
-                        />
-                      </div>
+                      <input
+                        id="subject"
+                        type="text"
+                        required
+                        placeholder="Subject"
+                        aria-label="Subject"
+                        value={formData.subject}
+                        onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                        style={{ padding: "12px 18px", borderRadius: "14px" }}
+                        className="w-full rounded-xl bg-white/5 border border-white/10 text-white placeholder-[var(--color-text-dim)] focus:outline-none focus:border-[var(--color-primary-light)] focus:ring-1 focus:ring-[var(--color-primary-light)] transition-all text-sm"
+                      />
                     </div>
 
                     {/* Message */}
-                    <div className="flex flex-col gap-2">
-                      <label htmlFor="message" className="text-xs font-bold uppercase tracking-wider text-[var(--color-text-muted)]">
-                        Project Details <span className="text-[var(--color-primary-light)]">*</span>
-                      </label>
-                      <textarea
-                        id="message"
-                        required
-                        rows={5}
-                        placeholder="Tell me about your project, timeline, tech stack, and goals..."
-                        value={formData.message}
-                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        style={{ padding: "10px 16px", borderRadius: "14px" }}
-                        className="w-full rounded-xl bg-white/5 border border-white/10 text-white placeholder-[var(--color-text-dim)] focus:outline-none focus:border-[var(--color-primary-light)] focus:ring-1 focus:ring-[var(--color-primary-light)] transition-all text-sm resize-none"
-                      />
-                    </div>
+                    <textarea
+                      id="message"
+                      required
+                      rows={5}
+                      placeholder="Tell me briefly about your project goals, timeline, or role details..."
+                      aria-label="Project details"
+                      value={formData.message}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      style={{ padding: "12px 18px", borderRadius: "14px" }}
+                      className="w-full rounded-xl bg-white/5 border border-white/10 text-white placeholder-[var(--color-text-dim)] focus:outline-none focus:border-[var(--color-primary-light)] focus:ring-1 focus:ring-[var(--color-primary-light)] transition-all text-sm resize-none"
+                    />
 
                     {/* Error Feedback Message */}
                     {errorMessage && (
