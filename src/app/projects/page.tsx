@@ -26,11 +26,9 @@ export default function ProjectsPage() {
               <span>Case Studies</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
-              Web Applications &{" "}
-              <br className="hidden sm:inline" />
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-primary-light)] via-sky-400 to-[var(--color-accent)]">
-                Digital Platforms
+                Web Applications &amp; Digital Platforms
               </span>
             </h1>
 

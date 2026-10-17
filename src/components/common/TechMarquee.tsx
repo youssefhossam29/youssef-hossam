@@ -32,13 +32,13 @@ export default function TechMarquee() {
             style={{ padding: "8px 20px" }}
             className="inline-block self-center rounded-xl text-xs font-bold uppercase tracking-wider bg-[var(--color-primary)]/10 text-[var(--color-primary-light)] border border-[var(--color-primary)]/25 cursor-pointer transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[var(--color-primary)]/25 hover:border-white/50 hover:shadow-[0_0_24px_rgba(59,130,246,0.5),inset_0_0_12px_rgba(59,130,246,0.3)]"
           >
-            Engineering Stack
+            Tech Stack
           </span>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
-            Specialized Technologies & Core Competencies
+            Core Technologies &amp; Development Tools
           </h2>
           <p className="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Logically structured across backend engineering, commercial e-commerce, cloud infrastructure, and security standards.
+            Specialized toolkit spanning Laravel backend development, WordPress &amp; WooCommerce platforms, database architectures, and third-party integrations.
           </p>
         </div>
       </div>

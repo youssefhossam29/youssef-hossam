@@ -50,7 +50,7 @@ export default function HomePage() {
 
               {/* Bio / Description (High contrast, easy to read) */}
               <p className="text-base sm:text-lg text-slate-300 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
-                Software Engineer specializing in building scalable Laravel web applications, robust RESTful APIs, and custom WordPress solutions—including E-Commerce stores, LMS platforms, and corporate websites—built for businesses looking to scale with confidence.
+                Specializing in building scalable Laravel web applications, robust RESTful APIs, and custom WordPress solutions—including E-Commerce stores, LMS platforms, and corporate websites—built for businesses looking to scale with confidence.
               </p>
 
               {/* CTA Buttons: Keep In Touch (Primary) & View CV (Secondary) */}
@@ -135,13 +135,13 @@ export default function HomePage() {
                   />
                 </div>
 
-                {/* Floating Badge 1: Laravel */}
+                {/* Floating Badge 1: Backend (Laravel) */}
                 <div
                   style={{ padding: "10px" }}
                   className="absolute -left-3 sm:-left-7 top-8 sm:top-12 z-20 rounded-2xl btn-base btn-outline backdrop-blur-xl flex items-center gap-2.5 text-xs sm:text-sm font-bold text-white whitespace-nowrap"
                 >
                   <span className="w-2.5 h-2.5 rounded-full bg-[#FF2D20] shadow-[0_0_12px_#FF2D20] shrink-0" />
-                  <span className="tracking-wide">Laravel</span>
+                  <span className="tracking-wide">Backend (Laravel)</span>
                 </div>
 
                 {/* Floating Badge 2: WordPress & WooCommerce */}
@@ -167,42 +167,46 @@ export default function HomePage() {
               style={{ padding: "8px 20px" }}
               className="inline-block self-center rounded-xl text-xs font-bold uppercase tracking-wider bg-[var(--color-accent)]/10 text-[var(--color-accent)] border border-[var(--color-accent)]/25 cursor-pointer transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[var(--color-accent)]/25 hover:border-white/50 hover:shadow-[0_0_24px_rgba(245,158,11,0.5),inset_0_0_12px_rgba(245,158,11,0.3)]"
             >
-              Specialized Engineering
+              Core Expertise
             </span>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
-              Two Complementary Pillars of Excellence
+              Dual-Stack Expertise for Modern Digital Products
             </h2>
             <p className="text-slate-300 text-base max-w-2xl mx-auto">
-              Bridging high-throughput backend architecture with commercial, high-converting e-commerce platforms.
+              Delivering scalable backend web applications alongside high-converting commercial platforms built to drive business growth.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-[auto_1fr] gap-8 lg:gap-10">
             {/* Pillar 1: Backend Architecture (padding: 20px, reduced inner gap, ul padding: 20px) */}
             <div
               style={{ padding: "20px" }}
-              className="glass-card relative overflow-hidden group flex flex-col justify-between gap-6 h-full"
+              className="glass-card relative overflow-hidden group md:row-span-2 md:grid md:grid-rows-subgrid flex flex-col justify-start gap-6 h-full"
             >
               <div className="flex flex-col gap-3">
                 <div className="w-14 h-14 rounded-2xl bg-[var(--color-primary)]/20 text-[var(--color-primary-light)] flex items-center justify-center border border-[var(--color-primary)]/30 group-hover:scale-105 transition-transform p-3.5">
                   <Server className="w-7 h-7" />
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-white">
-                  Backend Architecture & RESTful APIs
+                  Backend Development
                 </h3>
                 <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
-                  Engineering scalable server-side systems with Laravel and PHP. Focusing on relational database architectures with MySQL, real-time communication via WebSockets, and secure API workflows.
+                  Building scalable web applications and RESTful APIs using PHP &amp; Laravel. Focused on clean architectures and secure third-party integrations.
                 </p>
               </div>
               <ul
                 style={{ padding: "20px 0" }}
-                className="flex flex-col gap-4 border-t border-white/8 text-sm text-slate-200"
+                className="flex flex-col gap-3.5 border-t border-white/8 text-sm text-slate-200"
               >
                 {[
-                  "Scalable RESTful APIs documented via Swagger/OpenAPI",
-                  "Relational MySQL database architectures & query optimization",
-                  "Real-time communication (chat & notifications) via Laravel Reverb & WebSockets",
-                  "Third-party integrations: Paymob gateway, MinIO/AWS S3 & OAuth",
+                  "Designing scalable, well-structured APIs documented via Swagger/OpenAPI.",
+                  "Securing REST endpoints with token authentication and API rate limiting.",
+                  "Implementing secure OAuth social login (Google, Microsoft, GitHub, X, Discord).",
+                  "Designing relational MySQL schemas with a focus on query optimization.",
+                  "Managing asynchronous background jobs, scheduled tasks, and queue workers for high-throughput operations.",
+                  "Building real-time chat & notification using Laravel Reverb and WebSockets.",
+                  "Integrating secure payment workflows and financial transactions.",
+                  "Managing file uploads and cloud storage integrations using MinIO S3 object storage, and Spatie Media Library.",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3.5 leading-relaxed">
                     <span className="p-1.5 rounded-lg bg-emerald-500/15 text-emerald-400 shrink-0 border border-emerald-500/20 mt-0.5">
@@ -217,28 +221,30 @@ export default function HomePage() {
             {/* Pillar 2: Custom WordPress & WooCommerce (padding: 20px, reduced inner gap, ul padding: 20px 0) */}
             <div
               style={{ padding: "20px" }}
-              className="glass-card relative overflow-hidden group flex flex-col justify-between gap-6 h-full"
+              className="glass-card relative overflow-hidden group md:row-span-2 md:grid md:grid-rows-subgrid flex flex-col justify-start gap-6 h-full"
             >
               <div className="flex flex-col gap-3">
                 <div className="w-14 h-14 rounded-2xl bg-[var(--color-accent)]/20 text-[var(--color-accent)] flex items-center justify-center border border-[var(--color-accent)]/30 group-hover:scale-105 transition-transform p-3.5">
                   <Layout className="w-7 h-7" />
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold text-white">
-                  WordPress, WooCommerce & LMS Platforms
+                  WordPress, E-Commerce &amp; LMS Platforms
                 </h3>
                 <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
-                  Designing responsive, high-performing WordPress solutions. Implementing multilingual architectures, custom plugin development, and advanced LMS & e-commerce platforms.
+                  Building responsive, high-performing, and multilingual WordPress solutions, including e-commerce stores, LMS platforms, and corporate websites, alongside custom plugin development.
                 </p>
               </div>
               <ul
                 style={{ padding: "20px 0" }}
-                className="flex flex-col gap-4 border-t border-white/8 text-sm text-slate-200"
+                className="flex flex-col gap-3.5 border-t border-white/8 text-sm text-slate-200"
               >
                 {[
-                  "Custom WordPress plugin development extending specialized business needs",
-                  "Advanced LMS & e-commerce platforms (WooCommerce, Amelia, Tutor LMS)",
-                  "Multilingual architectures & dynamic content (Custom Post Types & Loops)",
-                  "Seamless checkout & global payment gateway integrations (Paymob, Stripe, Tabby)",
+                  "Developing custom WordPress plugins to extend core functionality.",
+                  "Building E-Commerce stores using WooCommerce and FunnelKit Cart.",
+                  "Integrating payment gateways and shipping providers including Stripe, Paymob, and Bosta.",
+                  "Architecting interactive LMS and booking platforms using Tutor LMS, Moodle (Edwiser), Amelia, and Daily.co.",
+                  "Designing dynamic content structures (Custom Post Types & Loops) powered by ACF and JetEngine.",
+                  "Implementing seamless multilingual website architectures and localization using Polylang and Loco Translate.",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3.5 leading-relaxed">
                     <span className="p-1.5 rounded-lg bg-emerald-500/15 text-emerald-400 shrink-0 border border-emerald-500/20 mt-0.5">
@@ -269,10 +275,10 @@ export default function HomePage() {
                 Selected Works
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
-                Featured Case Studies & Platforms
+                Featured Projects &amp; Case Studies
               </h2>
               <p className="text-slate-300 text-sm sm:text-base max-w-xl leading-relaxed">
-                Real production systems and high-converting commercial stores engineered for verified business outcomes.
+                A curated selection of scalable Laravel web apps and custom WordPress platforms tailored to diverse industry needs.
               </p>
             </div>
             <Link
@@ -305,20 +311,20 @@ export default function HomePage() {
               style={{ padding: "20px" }}
               className="relative w-full max-w-2xl mx-auto flex flex-col items-center justify-center text-center gap-7 sm:gap-8 self-center"
             >
-              {/* Available for Immediate Engagement - Neon Cyber Depth Hover */}
+              {/* Let's Collaborate - Neon Cyber Depth Hover */}
               <span
                 style={{ padding: "8px 20px" }}
                 className="inline-flex items-center justify-center self-center rounded-xl text-xs font-bold uppercase tracking-wider bg-emerald-500/10 text-emerald-400 border border-emerald-500/25 cursor-pointer transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-emerald-500/25 hover:border-white/50 hover:shadow-[0_0_24px_rgba(16,185,129,0.5),inset_0_0_12px_rgba(16,185,129,0.3)]"
               >
-                <span>Available for Immediate Engagement</span>
+                <span>Let&apos;s Collaborate</span>
               </span>
 
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight text-center w-full">
-                Ready to Build Something Scalable & High-Impact?
+                Tell Me What&apos;s in Your Mind
               </h2>
 
               <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal text-center w-full">
-                Whether you need a dedicated Backend Engineer for enterprise Laravel systems, high-converting WooCommerce storefronts, or API architecture audits — let&apos;s build it with precision.
+                Whether you are looking for a Backend Engineer for custom Laravel web apps, or need a high-converting WordPress, WooCommerce, or LMS platform—let&apos;s build it with precision.
               </p>
 
               {/* Exact 20px gap (gap-5) between buttons */}
@@ -327,7 +333,7 @@ export default function HomePage() {
                   href="/contact"
                   className="btn-base btn-primary shadow-lg shadow-[var(--color-primary)]/25"
                 >
-                  <span>Let&apos;s Talk Together</span>
+                  <span>Get in Touch</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a

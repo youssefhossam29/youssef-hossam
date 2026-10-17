@@ -80,8 +80,10 @@ export default function ContactPage() {
               <span>GET IN TOUCH</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight">
-              Let&apos;s Talk About Your Next Project
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-primary-light)] via-sky-400 to-[var(--color-accent)]">
+                Let&apos;s Talk About Your Next Project
+              </span>
             </h1>
 
             <p className="text-base sm:text-lg text-[var(--color-text-muted)] leading-relaxed max-w-3xl mx-auto">
