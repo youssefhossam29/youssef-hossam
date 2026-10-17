@@ -320,7 +320,7 @@ export default function HomePage() {
               </span>
 
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight text-center w-full">
-                Tell Me What&apos;s in Your Mind
+                Available for Immediate Engagement
               </h2>
 
               <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal text-center w-full">

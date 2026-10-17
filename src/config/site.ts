@@ -18,7 +18,7 @@ export const siteConfig = {
       "Software Engineer (Laravel/WordPress) specializing in building scalable RESTful APIs, database architectures, and real-time web applications using PHP, Laravel, and MySQL. Experienced in integrating external services and payment gateways, and proficient in developing advanced LMS and e-commerce platforms.",
     militaryStatus: "Completed Military Service",
     slogan:
-      "Building scalable Laravel Web Applications and high-converting WordPress solutions.",
+      "Building scalable Laravel web apps and custom WordPress platforms built for growth.",
     location: "Alexandria, Egypt (Available for Remote & Relocation)",
     email: "youssefhossam2902@gmail.com",
     phone: "(+20) 1279932792",
