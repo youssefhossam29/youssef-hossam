@@ -20,7 +20,7 @@ export default function Footer() {
       <div className="relative page-container">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
           {/* Column 1: Brand & Slogan (Centered on mobile, left on desktop) */}
-          <div className="flex flex-col items-center text-center md:items-start md:text-left gap-5 sm:gap-6">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left gap-5 sm:gap-6 w-fit mx-auto md:mx-0 justify-self-center md:justify-self-start">
             <Link href="/" className="inline-flex items-center justify-center md:justify-start" aria-label="Youssef Hossam Homepage">
               <Image
                 src={siteConfig.logos.header}
@@ -30,7 +30,7 @@ export default function Footer() {
                 className="h-16 sm:h-18 md:h-20 lg:h-[72px] w-auto object-contain"
               />
             </Link>
-            <p className="text-sm text-[var(--color-text-muted)] leading-relaxed max-w-sm">
+            <p className="text-sm text-[var(--color-text-muted)] leading-relaxed text-center md:text-left w-0 min-w-full">
               {siteConfig.brand.slogan}
             </p>
           </div>
