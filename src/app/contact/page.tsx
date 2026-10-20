@@ -108,7 +108,7 @@ export default function ContactPage() {
                   {/* Location */}
                   <div
                     style={{ padding: "10px" }}
-                    className="flex items-start gap-4 rounded-xl bg-white/[0.03] border border-white/8"
+                    className="flex items-start gap-4 rounded-xl bg-white/[0.03] border border-white/8 hover:border-[var(--color-primary-light)] hover:shadow-[0_0_20px_rgba(59,130,246,0.35)] transition-all"
                   >
                     <div className="text-[var(--color-primary-light)] shrink-0 bg-transparent border-0 p-1">
                       <MapPin className="w-5 h-5" />
@@ -126,7 +126,7 @@ export default function ContactPage() {
                   {/* Email */}
                   <div
                     style={{ padding: "10px" }}
-                    className="flex items-start justify-between gap-3 rounded-xl bg-white/[0.03] border border-white/8"
+                    className="flex items-start justify-between gap-3 rounded-xl bg-white/[0.03] border border-white/8 hover:border-[var(--color-primary-light)] hover:shadow-[0_0_20px_rgba(59,130,246,0.35)] transition-all"
                   >
                     <div className="flex items-start gap-4">
                       <div className="text-[var(--color-accent)] shrink-0 bg-transparent border-0 p-1">
@@ -162,7 +162,7 @@ export default function ContactPage() {
                   {/* Phone */}
                   <div
                     style={{ padding: "10px" }}
-                    className="flex items-start gap-4 rounded-xl bg-white/[0.03] border border-white/8"
+                    className="flex items-start gap-4 rounded-xl bg-white/[0.03] border border-white/8 hover:border-[var(--color-primary-light)] hover:shadow-[0_0_20px_rgba(59,130,246,0.35)] transition-all"
                   >
                     <div className="text-emerald-400 shrink-0 bg-transparent border-0 p-1">
                       <Phone className="w-5 h-5" />
@@ -193,7 +193,7 @@ export default function ContactPage() {
                       href={siteConfig.social.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-[var(--color-accent)] transition-all hover:-translate-y-0.5 shadow-sm"
+                      className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-[var(--color-primary-light)] hover:shadow-[0_0_20px_rgba(59,130,246,0.35)] transition-all hover:-translate-y-0.5 shadow-sm"
                       aria-label="GitHub Profile"
                     >
                       <GithubIcon className="w-5 h-5" />
@@ -202,7 +202,7 @@ export default function ContactPage() {
                       href={siteConfig.social.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-[var(--color-accent)] transition-all hover:-translate-y-0.5 shadow-sm"
+                      className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-[var(--color-primary-light)] hover:shadow-[0_0_20px_rgba(59,130,246,0.35)] transition-all hover:-translate-y-0.5 shadow-sm"
                       aria-label="LinkedIn Profile"
                     >
                       <LinkedinIcon className="w-5 h-5" />

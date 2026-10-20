@@ -109,13 +109,15 @@ body {
   border-radius: 18px;
   transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
               border-color 0.25s ease,
-              box-shadow 0.25s ease;
+              box-shadow 0.25s ease,
+              background-color 0.25s ease;
 }
 
-.glass-card:hover {
+.glass-card:hover,
+.project-card:hover {
   background: var(--glass-card-hover);
-  border-color: rgba(255, 255, 255, 0.16);
-  box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.45);
+  border-color: var(--color-primary-light) !important;
+  box-shadow: 0 0 26px -2px rgba(59, 130, 246, 0.35) !important;
 }
 
 /* Project Card Specific Styling */
@@ -125,12 +127,6 @@ body {
               border-color 0.25s ease,
               box-shadow 0.25s ease;
 }
-
-.project-card:hover {
-  border-color: var(--color-primary-light) !important;
-  box-shadow: 0 0 26px -2px rgba(59, 130, 246, 0.35) !important;
-}
-
 
 :focus-visible {
   outline: 2px solid var(--color-primary-light);
@@ -147,7 +143,16 @@ body {
 
 .glass-pill:hover {
   background: rgba(255, 255, 255, 0.1);
-  border-color: var(--color-accent);
+  border-color: var(--color-primary-light) !important;
+  box-shadow: 0 0 20px -2px rgba(59, 130, 246, 0.35) !important;
+}
+
+/* Form Input & Textarea Hover Border */
+input:hover:not(:disabled),
+textarea:hover:not(:disabled),
+select:hover:not(:disabled) {
+  border-color: var(--color-primary-light) !important;
+  box-shadow: 0 0 16px -2px rgba(59, 130, 246, 0.25);
 }
 
 /* Glow Utilities */
@@ -186,7 +191,7 @@ body {
 .animate-marquee-left {
   display: flex;
   width: max-content;
-  animation: scrollLeft 35s linear infinite;
+  animation: scrollLeft 55s linear infinite;
 }
 
 .animate-marquee-left:hover {
@@ -196,7 +201,7 @@ body {
 .animate-marquee-right {
   display: flex;
   width: max-content;
-  animation: scrollRight 35s linear infinite;
+  animation: scrollRight 55s linear infinite;
 }
 
 .animate-marquee-right:hover {
@@ -400,8 +405,8 @@ body {
 .btn-outline:hover,
 .btn-secondary:hover {
   background-color: rgba(255, 255, 255, 0.12);
-  border-color: var(--color-accent);
-  box-shadow: 0 14px 28px -4px var(--color-accent-glow);
+  border-color: var(--color-primary-light) !important;
+  box-shadow: 0 0 26px -2px rgba(59, 130, 246, 0.35) !important;
 }
 
 /* WhatsApp Button Variant */

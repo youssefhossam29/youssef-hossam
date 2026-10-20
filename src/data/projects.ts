@@ -311,7 +311,6 @@ export const projectsData: Project[] = [
       "Polylang",
       "Amelia Booking",
       "Daily.co Integration",
-      "Tabby Payments",
       "Stripe Payments",
       "WooCommerce",
       "Better Messages",

@@ -60,6 +60,7 @@ export interface TimelineItem {
   id: string;
   role: string;
   company: string;
+  companyUrl?: string;
   location: string;
   period: string;
   type: string;
@@ -71,12 +72,14 @@ export const experienceData: TimelineItem[] = [
   {
     id: "exp-1",
     role: "Backend Laravel Developer",
-    company: "Gen-Tech",
+    company: "Gen-Tech Software Development Company",
+    companyUrl: "https://gen-tech.io/",
     location: "Fifth Settlement, Egypt",
-    period: "04/2025 – Current",
+    period: "06/2025 – Current",
     type: "Full-Time",
     description: [
       "Architected and enhanced scalable RESTful APIs (documented via Swagger/OpenAPI) to power complex workflows.",
+      "Developed a wallet & financial system to automate commissions, milestone refunds, and user balance calculations (available, held, and total).",
       "Engineered real-time communication features (chat and notifications) via Laravel Reverb and WebSockets.",
       "Integrated third-party services, including Paymob payment, MinIO/AWS S3 storage, and Google/Microsoft OAuth.",
     ],
@@ -96,9 +99,10 @@ export const experienceData: TimelineItem[] = [
   {
     id: "exp-2",
     role: "Wordpress Developer",
-    company: "Gen-Tech",
+    company: "Gen-Tech Software Development Company",
+    companyUrl: "https://gen-tech.io/",
     location: "Fifth Settlement, Egypt",
-    period: "08/2024 – 04/2025",
+    period: "10/2024 – 06/2025",
     type: "Full-Time",
     description: [
       "Designed responsive WordPress websites, implementing multilingual architectures and dynamic content (Custom Post Types & Loops).",
@@ -114,19 +118,6 @@ export const experienceData: TimelineItem[] = [
       "JetEngine",
     ],
   },
-  {
-    id: "exp-3",
-    role: "Full Stack Wordpress Developer",
-    company: "Information Technology Institute (ITI)",
-    location: "Alexandria, Egypt",
-    period: "05/2024 – 07/2024",
-    type: "Intensive Code Camp",
-    description: [
-      "Completed the Intensive Code Camp (ICC), CMS Track.",
-      "Developed full-stack web applications, focusing on both front-end and back-end development using PHP and Wordpress.",
-    ],
-    technologies: ["PHP", "WordPress", "MySQL", "JavaScript", "HTML", "CSS", "Git"],
-  },
 ];
 
 export interface EducationItem {
@@ -141,12 +132,12 @@ export interface EducationItem {
 export const educationData: EducationItem[] = [
   {
     id: "edu-1",
-    degree: "Bachelor of Computer Science (GPA: 3.6/4)",
-    institution: "Alexandria University — Department of Computer Science and Statistics",
+    degree: "Bachelor of Computer Science and Statistics",
+    institution: "Alexandria University — Department of Math",
     period: "10/2018 – 07/2022",
     grade: "GPA: 3.6 / 4.0",
     highlights: [
-      "Department of Computer Science and Statistics, Alexandria, Egypt.",
+      "Department of Math, Alexandria, Egypt.",
       "Rigorous foundations in Computer Science, Database Architectures, and Software Quality.",
     ],
   },
@@ -154,7 +145,7 @@ export const educationData: EducationItem[] = [
     id: "edu-2",
     degree: "Intensive Code Camp (ICC) — CMS Track",
     institution: "Information Technology Institute (ITI)",
-    period: "05/2024 – 07/2024",
+    period: "05/2024 – 08/2024",
     grade: "Distinction Graduate",
     highlights: [
       "Completed the Intensive Code Camp (ICC), CMS Track in Alexandria, Egypt.",

@@ -153,10 +153,9 @@
      - **Languages:** Arabic (Native), English (Professional).
 3. **سكشن الخط الزمني للخبرات (Timeline - مرجع `images/timeline.png`):**
    - خط رأسي مضيء في المنتصف تتفرع منه البطاقات يميناً ويساراً:
-     - **Backend Laravel Developer** @ Gen-Tech (08/2025 – Current)
-     - **WordPress Developer** @ Gen-Tech (11/2024 – 08/2025)
-     - **Full Stack WordPress Developer** @ ITI (05/2024 – 08/2024)
-4. **سكشن التعليم والمنح (Education & Scholarships - مرجع `images/Education.png`):**
+     - **Backend Laravel Developer** @ Gen-Tech (06/2025 – Current)
+     - **WordPress Developer** @ Gen-Tech (10/2024 – 06/2025)
+4. **سكشن التعليم والمنح (Education & Training - مرجع `images/Education.png`):**
    - بطاقة بكالوريوس الحاسب الآلي والإحصاء - جامعة الإسكندرية (GPA: 3.6/4).
    - بطاقة منحة معهد تكنولوجيا المعلومات ITI (Intensive Code Camp - CMS Track).
    - بطاقة التدريب والتطوير المستمر وتأدية الخدمة العسكرية.
