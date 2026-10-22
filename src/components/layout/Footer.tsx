@@ -4,7 +4,6 @@ import Image from "next/image";
 import { siteConfig } from "@/config/site";
 import {
   Mail,
-  Phone,
   MapPin,
   ArrowUpRight,
 } from "lucide-react";
@@ -79,14 +78,16 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-center justify-center md:justify-start gap-3">
-                <span className="text-[var(--color-primary-light)] shrink-0 bg-transparent border-0">
-                  <Phone className="w-4 h-4" />
+                <span className="text-emerald-400 shrink-0 bg-transparent border-0">
+                  <WhatsAppIcon className="w-4 h-4" />
                 </span>
                 <a
-                  href={`tel:${siteConfig.brand.phone.replace(/[^0-9+]/g, "")}`}
-                  className="hover:text-white transition-colors"
+                  href={siteConfig.brand.whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-emerald-400 transition-colors"
                 >
-                  {siteConfig.brand.phone}
+                  {siteConfig.brand.whatsappHandle}
                 </a>
               </li>
             </ul>
@@ -117,7 +118,8 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/5 hover:bg-white/10 text-emerald-400 border border-white/10 hover:border-emerald-500 transition-all hover:-translate-y-0.5 shadow-sm"
-                  aria-label="WhatsApp Chat"
+                  aria-label="WhatsApp Chat (@Youssef.Hossam29)"
+                  title="WhatsApp: @Youssef.Hossam29"
                 >
                   <WhatsAppIcon className="w-5 h-5" />
                 </a>

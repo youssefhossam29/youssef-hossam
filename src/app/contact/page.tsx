@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { siteConfig } from "@/config/site";
 import {
   Mail,
-  Phone,
   MapPin,
   Send,
   CheckCircle,
@@ -159,17 +158,17 @@ export default function ContactPage() {
                     </button>
                   </div>
 
-                  {/* Phone */}
+                  {/* WhatsApp */}
                   <div
                     style={{ padding: "10px" }}
                     className="flex items-start gap-4 rounded-xl bg-white/[0.03] border border-white/8 hover:border-[var(--color-primary-light)] hover:shadow-[0_0_20px_rgba(59,130,246,0.35)] transition-all"
                   >
                     <div className="text-emerald-400 shrink-0 bg-transparent border-0 p-1">
-                      <Phone className="w-5 h-5" />
+                      <WhatsAppIcon className="w-5 h-5" />
                     </div>
                     <div>
                       <h4 className="text-xs uppercase font-bold tracking-wider text-[var(--color-text-dim)] mb-1">
-                        Phone &amp; WhatsApp
+                        WhatsApp
                       </h4>
                       <a
                         href={siteConfig.brand.whatsappUrl}
@@ -177,7 +176,7 @@ export default function ContactPage() {
                         rel="noopener noreferrer"
                         className="text-sm font-semibold text-white hover:text-emerald-400 transition-colors"
                       >
-                        {siteConfig.brand.phone}
+                        {siteConfig.brand.whatsappHandle}
                       </a>
                     </div>
                   </div>
@@ -212,7 +211,8 @@ export default function ContactPage() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/5 hover:bg-white/10 text-emerald-400 border border-white/10 hover:border-emerald-500 transition-all hover:-translate-y-0.5 shadow-sm"
-                      aria-label="WhatsApp"
+                      aria-label="WhatsApp (@Youssef.Hossam29)"
+                      title="WhatsApp: @Youssef.Hossam29"
                     >
                       <WhatsAppIcon className="w-5 h-5" />
                     </a>

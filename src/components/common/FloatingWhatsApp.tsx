@@ -14,7 +14,8 @@ export default function FloatingWhatsApp() {
         href={siteConfig.brand.whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chat directly on WhatsApp"
+        aria-label="Chat directly on WhatsApp (@Youssef.Hossam29)"
+        title="WhatsApp: @Youssef.Hossam29"
         className="group relative flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 pulse-whatsapp focus:outline-none"
       >
         <MessageCircle className="w-7 h-7 fill-white stroke-none" />
@@ -24,7 +25,7 @@ export default function FloatingWhatsApp() {
           role="tooltip"
           className="absolute right-16 top-1/2 -translate-y-1/2 px-3 py-1.5 rounded-lg bg-[#111827] text-white text-xs font-semibold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-white/10 shadow-xl"
         >
-          Chat with Youssef
+          WhatsApp: @Youssef.Hossam29
         </span>
       </a>
     </aside>

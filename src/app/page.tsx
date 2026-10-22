@@ -103,7 +103,8 @@ export default function HomePage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/5 hover:bg-white/10 text-emerald-400 border border-white/10 hover:border-emerald-500 transition-all hover:-translate-y-0.5 shadow-sm"
-                  aria-label="WhatsApp Chat"
+                  aria-label="WhatsApp Chat (@Youssef.Hossam29)"
+                  title="WhatsApp: @Youssef.Hossam29"
                 >
                   <WhatsAppIcon className="w-5 h-5" />
                 </a>

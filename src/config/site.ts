@@ -21,10 +21,9 @@ export const siteConfig = {
       "Delivering scalable Laravel web apps and custom WordPress platforms tailored to help businesses grow and succeed.",
     location: "Alexandria, Egypt (Available for Remote & Relocation)",
     email: "youssefhossam2902@gmail.com",
-    phone: "(+20) 1279932792",
     url: "https://youssefhossam.dev",
-    whatsappNumber: "201279932792",
-    whatsappUrl: "https://wa.me/201279932792",
+    whatsappHandle: "@Youssef.Hossam29",
+    whatsappUrl: "https://wa.me/@Youssef.Hossam29",
     cvPath: "/files/Youssef Hossam.pdf",
     status: {
       isAvailable: true,
@@ -36,7 +35,7 @@ export const siteConfig = {
   social: {
     github: "https://github.com/youssefhossam29",
     linkedin: "https://linkedin.com/in/youssef-hossam",
-    whatsapp: "https://wa.me/201279932792",
+    whatsapp: "https://wa.me/@Youssef.Hossam29",
     email: "mailto:youssefhossam2902@gmail.com",
   },
 
