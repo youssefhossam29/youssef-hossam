@@ -196,8 +196,8 @@ export const projectsData: Project[] = [
     country: "Egypt",
     industry: "Education & EdTech",
     image: "/projects/dataskool.png",
-    link: "dataskool.ai",
-    liveUrl: "https://dataskool.ai",
+    link: "dataskool.net",
+    liveUrl: "https://dataskool.net/",
     desc: "Modern EdTech platform powered by Tutor LMS and WooCommerce, designed for data analytics education, offering interactive online courses and social OAuth authentication.",
     description:
       "Modern EdTech platform powered by Tutor LMS and WooCommerce, designed for data analytics education, offering interactive online courses and social OAuth authentication.",
