@@ -51,7 +51,7 @@ export const projectsData: Project[] = [
       "Laravel Passport",
       "Spatie Media Library",
     ],
-    isFeatured: false,
+    isFeatured: true,
   },
   {
     id: "mawrid",
@@ -236,7 +236,7 @@ export const projectsData: Project[] = [
       "Polylang",
       "GSheet Connector for Forms",
     ],
-    isFeatured: false,
+    isFeatured: true,
   },
   {
     id: "qalam",
@@ -287,7 +287,7 @@ export const projectsData: Project[] = [
       "Stripe Gateway",
       "WooCommerce",
     ],
-    isFeatured: false,
+    isFeatured: true,
   },
   {
     id: "aqlam",
@@ -387,7 +387,7 @@ export const projectsData: Project[] = [
       "Polylang",
       "GSheet Connector for Elementor Forms",
     ],
-    isFeatured: false,
+    isFeatured: true,
   },
   {
     id: "brightevents",
@@ -458,7 +458,7 @@ export const projectsData: Project[] = [
       "Polylang",
       "GSheet Connector for Forms",
     ],
-    isFeatured: false,
+    isFeatured: true,
   },
 
   {
