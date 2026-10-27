@@ -72,7 +72,7 @@
   - **العمود الثالث (Contact Info):**
     - الموقع: Alexandria, Egypt (متاح للعمل عن بُعد وللانتقال).
     - البريد: `youssefhossam2902@gmail.com`
-    - الهاتف / واتساب: `(+20) 1279932792`
+    - واتساب: `@Youssef.Hossam29` (`Wa.me/@Youssef.Hossam29`)
   - **العمود الرابع (Social Links):** روابط الحسابات المهنية (GitHub, LinkedIn, WhatsApp).
   - **الشريط السفلي:** شارة الحالة `🟢 Available for Opportunities` وحقوق الملكية `© 2026 Youssef Hossam. All rights reserved.`
 
@@ -153,11 +153,12 @@
      - **Languages:** Arabic (Native), English (Professional).
 3. **سكشن الخط الزمني للخبرات (Timeline - مرجع `images/timeline.png`):**
    - خط رأسي مضيء في المنتصف تتفرع منه البطاقات يميناً ويساراً:
-     - **Backend Laravel Developer** @ Gen-Tech (06/2025 – Current)
-     - **WordPress Developer** @ Gen-Tech (10/2024 – 06/2025)
+     - **Backend Laravel Developer** @ Gen-Tech (04/2025 – Current)
+     - **WordPress Developer** @ Gen-Tech (08/2024 – 04/2025)
+     - **Full Stack WordPress Developer** @ ITI (05/2024 – 07/2024)
 4. **سكشن التعليم والمنح (Education & Training - مرجع `images/Education.png`):**
-   - بطاقة بكالوريوس الحاسب الآلي والإحصاء - جامعة الإسكندرية (GPA: 3.6/4).
-   - بطاقة منحة معهد تكنولوجيا المعلومات ITI (Intensive Code Camp - CMS Track).
+   - بطاقة بكالوريوس الحاسب الآلي والإحصاء - جامعة الإسكندرية (GPA: 3.6/4: 10/2018 – 07/2022).
+   - بطاقة منحة معهد تكنولوجيا المعلومات ITI (Intensive Code Camp - CMS Track: 05/2024 – 07/2024).
    - بطاقة التدريب والتطوير المستمر وتأدية الخدمة العسكرية.
 5. **سكشن الأسئلة الشائعة (FAQ Accordion - مرجع `images/faq.png`):**
    - جهة اليسار: كولاج صوري احترافي مع خلفية نقطية دقيقة.
@@ -181,7 +182,7 @@
   - بطاقات المعلومات:
     - 📍 **الموقع:** Alexandria, Egypt (جاهز للعمل عن بُعد وللانتقال).
     - ✉️ **البريد الإلكتروني:** `youssefhossam2902@gmail.com` مع زر نسخ سريع بنقرة واحدة.
-    - 📞 **الهاتف / واتساب:** `(+20) 1279932792`
+    - 💬 **واتساب:** `@Youssef.Hossam29` (`Wa.me/@Youssef.Hossam29`)
   - قسم تابعني (`Follow Me`): أزرار دائرية أنيقة لـ (GitHub, LinkedIn, WhatsApp).
 - **جهة اليمين (بطاقة نموذج الاتصال):**
   - **Full Name \***: حقل إدخال الاسم.

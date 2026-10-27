@@ -15,6 +15,9 @@ import {
   Calendar,
   ArrowRight,
   ExternalLink,
+  Server,
+  Layout,
+  CheckCircle2,
 } from "lucide-react";
 
 export default function AboutPage() {
@@ -276,8 +279,108 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Tech Marquee */}
+      {/* Tech Marquee: Core Technologies & Development Tools */}
       <TechMarquee />
+
+      {/* ================= 5. DUAL-STACK EXPERTISE TRACKS ================= */}
+      <section className="page-section">
+        <div className="page-container">
+          <div className="section-header !mb-12">
+            <span
+              style={{ padding: "8px 20px" }}
+              className="inline-block self-center rounded-xl text-xs font-bold uppercase tracking-wider bg-[var(--color-accent)]/10 text-[var(--color-accent)] border border-[var(--color-accent)]/25 cursor-pointer transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[var(--color-accent)]/25 hover:border-white/50 hover:shadow-[0_0_24px_rgba(245,158,11,0.5),inset_0_0_12px_rgba(245,158,11,0.3)]"
+            >
+              Core Expertise
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
+              Dual-Stack Expertise for Modern Digital Products
+            </h2>
+            <p className="text-slate-300 text-base max-w-2xl mx-auto">
+              Delivering scalable backend web applications alongside high-converting commercial platforms built to drive business growth.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-[auto_1fr] gap-8 lg:gap-10">
+            {/* Pillar 1: Backend Architecture (padding: 20px, reduced inner gap, ul padding: 20px) */}
+            <div
+              style={{ padding: "20px" }}
+              className="glass-card relative overflow-hidden group md:row-span-2 md:grid md:grid-rows-subgrid flex flex-col justify-start gap-6 h-full"
+            >
+              <div className="flex flex-col gap-3">
+                <div className="w-14 h-14 rounded-2xl bg-[var(--color-primary)]/20 text-[var(--color-primary-light)] flex items-center justify-center border border-[var(--color-primary)]/30 group-hover:scale-105 transition-transform p-3.5">
+                  <Server className="w-7 h-7" />
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-white">
+                  Backend Development
+                </h3>
+                <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
+                  Building scalable web applications and RESTful APIs using PHP &amp; Laravel. Focused on clean architectures and secure third-party integrations.
+                </p>
+              </div>
+              <ul
+                style={{ padding: "20px 0" }}
+                className="flex flex-col gap-3.5 border-t border-white/8 text-sm text-slate-200"
+              >
+                {[
+                  "Designing scalable, well-structured APIs documented via Swagger/OpenAPI.",
+                  "Securing REST endpoints with token authentication and API rate limiting.",
+                  "Implementing secure OAuth social login (Google, Microsoft, GitHub, X, Discord).",
+                  "Designing relational MySQL schemas with a focus on query optimization.",
+                  "Managing asynchronous background jobs, scheduled tasks, and queue workers for high-throughput operations.",
+                  "Building real-time chat & notification using Laravel Reverb and WebSockets.",
+                  "Integrating secure payment workflows and financial transactions.",
+                  "Managing file uploads and cloud storage integrations using MinIO S3 object storage, and Spatie Media Library.",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3.5 leading-relaxed">
+                    <span className="p-1.5 rounded-lg bg-emerald-500/15 text-emerald-400 shrink-0 border border-emerald-500/20 mt-0.5">
+                      <CheckCircle2 className="w-4 h-4" />
+                    </span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Pillar 2: Custom WordPress & WooCommerce (padding: 20px, reduced inner gap, ul padding: 20px 0) */}
+            <div
+              style={{ padding: "20px" }}
+              className="glass-card relative overflow-hidden group md:row-span-2 md:grid md:grid-rows-subgrid flex flex-col justify-start gap-6 h-full"
+            >
+              <div className="flex flex-col gap-3">
+                <div className="w-14 h-14 rounded-2xl bg-[var(--color-accent)]/20 text-[var(--color-accent)] flex items-center justify-center border border-[var(--color-accent)]/30 group-hover:scale-105 transition-transform p-3.5">
+                  <Layout className="w-7 h-7" />
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-white">
+                  WordPress, E-Commerce &amp; LMS Platforms
+                </h3>
+                <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
+                  Building responsive, high-performing, and multilingual WordPress solutions, including e-commerce stores, LMS platforms, and corporate websites, alongside custom plugin development.
+                </p>
+              </div>
+              <ul
+                style={{ padding: "20px 0" }}
+                className="flex flex-col gap-3.5 border-t border-white/8 text-sm text-slate-200"
+              >
+                {[
+                  "Developing custom WordPress plugins to extend core functionality.",
+                  "Building E-Commerce stores using WooCommerce and FunnelKit Cart.",
+                  "Integrating payment gateways and shipping providers including Stripe, Paymob, and Bosta.",
+                  "Architecting interactive LMS and booking platforms using Tutor LMS, Moodle (Edwiser), Amelia, and Daily.co.",
+                  "Designing dynamic content structures (Custom Post Types & Loops) powered by ACF and JetEngine.",
+                  "Implementing seamless multilingual website architectures and localization using Polylang and Loco Translate.",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3.5 leading-relaxed">
+                    <span className="p-1.5 rounded-lg bg-emerald-500/15 text-emerald-400 shrink-0 border border-emerald-500/20 mt-0.5">
+                      <CheckCircle2 className="w-4 h-4" />
+                    </span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

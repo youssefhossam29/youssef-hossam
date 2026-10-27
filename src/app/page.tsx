@@ -13,7 +13,6 @@ import {
   MessageCircle,
   Server,
   Layout,
-  CheckCircle2,
 } from "lucide-react";
 import { GithubIcon, LinkedinIcon, WhatsAppIcon } from "@/components/common/Icons";
 
@@ -178,83 +177,37 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-[auto_1fr] gap-8 lg:gap-10">
-            {/* Pillar 1: Backend Architecture (padding: 20px, reduced inner gap, ul padding: 20px) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+            {/* Pillar 1: Backend Architecture */}
             <div
-              style={{ padding: "20px" }}
-              className="glass-card relative overflow-hidden group md:row-span-2 md:grid md:grid-rows-subgrid flex flex-col justify-start gap-6 h-full"
+              style={{ padding: "28px" }}
+              className="glass-card relative overflow-hidden group flex flex-col justify-start gap-4 h-full hover:border-[var(--color-primary-light)]/40 transition-all duration-300"
             >
-              <div className="flex flex-col gap-3">
-                <div className="w-14 h-14 rounded-2xl bg-[var(--color-primary)]/20 text-[var(--color-primary-light)] flex items-center justify-center border border-[var(--color-primary)]/30 group-hover:scale-105 transition-transform p-3.5">
-                  <Server className="w-7 h-7" />
-                </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white">
-                  Backend Development
-                </h3>
-                <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
-                  Building scalable web applications and RESTful APIs using PHP &amp; Laravel. Focused on clean architectures and secure third-party integrations.
-                </p>
+              <div className="w-14 h-14 rounded-2xl bg-[var(--color-primary)]/20 text-[var(--color-primary-light)] flex items-center justify-center border border-[var(--color-primary)]/30 group-hover:scale-105 transition-transform p-3.5">
+                <Server className="w-7 h-7" />
               </div>
-              <ul
-                style={{ padding: "20px 0" }}
-                className="flex flex-col gap-3.5 border-t border-white/8 text-sm text-slate-200"
-              >
-                {[
-                  "Designing scalable, well-structured APIs documented via Swagger/OpenAPI.",
-                  "Securing REST endpoints with token authentication and API rate limiting.",
-                  "Implementing secure OAuth social login (Google, Microsoft, GitHub, X, Discord).",
-                  "Designing relational MySQL schemas with a focus on query optimization.",
-                  "Managing asynchronous background jobs, scheduled tasks, and queue workers for high-throughput operations.",
-                  "Building real-time chat & notification using Laravel Reverb and WebSockets.",
-                  "Integrating secure payment workflows and financial transactions.",
-                  "Managing file uploads and cloud storage integrations using MinIO S3 object storage, and Spatie Media Library.",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3.5 leading-relaxed">
-                    <span className="p-1.5 rounded-lg bg-emerald-500/15 text-emerald-400 shrink-0 border border-emerald-500/20 mt-0.5">
-                      <CheckCircle2 className="w-4 h-4" />
-                    </span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+              <h3 className="text-xl sm:text-2xl font-bold text-white">
+                Backend Development
+              </h3>
+              <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
+                Building scalable web applications and RESTful APIs using PHP &amp; Laravel. Focused on clean architectures and secure third-party integrations.
+              </p>
             </div>
 
-            {/* Pillar 2: Custom WordPress & WooCommerce (padding: 20px, reduced inner gap, ul padding: 20px 0) */}
+            {/* Pillar 2: Custom WordPress & WooCommerce */}
             <div
-              style={{ padding: "20px" }}
-              className="glass-card relative overflow-hidden group md:row-span-2 md:grid md:grid-rows-subgrid flex flex-col justify-start gap-6 h-full"
+              style={{ padding: "28px" }}
+              className="glass-card relative overflow-hidden group flex flex-col justify-start gap-4 h-full hover:border-[var(--color-accent)]/40 transition-all duration-300"
             >
-              <div className="flex flex-col gap-3">
-                <div className="w-14 h-14 rounded-2xl bg-[var(--color-accent)]/20 text-[var(--color-accent)] flex items-center justify-center border border-[var(--color-accent)]/30 group-hover:scale-105 transition-transform p-3.5">
-                  <Layout className="w-7 h-7" />
-                </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white">
-                  WordPress, E-Commerce &amp; LMS Platforms
-                </h3>
-                <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
-                  Building responsive, high-performing, and multilingual WordPress solutions, including e-commerce stores, LMS platforms, and corporate websites, alongside custom plugin development.
-                </p>
+              <div className="w-14 h-14 rounded-2xl bg-[var(--color-accent)]/20 text-[var(--color-accent)] flex items-center justify-center border border-[var(--color-accent)]/30 group-hover:scale-105 transition-transform p-3.5">
+                <Layout className="w-7 h-7" />
               </div>
-              <ul
-                style={{ padding: "20px 0" }}
-                className="flex flex-col gap-3.5 border-t border-white/8 text-sm text-slate-200"
-              >
-                {[
-                  "Developing custom WordPress plugins to extend core functionality.",
-                  "Building E-Commerce stores using WooCommerce and FunnelKit Cart.",
-                  "Integrating payment gateways and shipping providers including Stripe, Paymob, and Bosta.",
-                  "Architecting interactive LMS and booking platforms using Tutor LMS, Moodle (Edwiser), Amelia, and Daily.co.",
-                  "Designing dynamic content structures (Custom Post Types & Loops) powered by ACF and JetEngine.",
-                  "Implementing seamless multilingual website architectures and localization using Polylang and Loco Translate.",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3.5 leading-relaxed">
-                    <span className="p-1.5 rounded-lg bg-emerald-500/15 text-emerald-400 shrink-0 border border-emerald-500/20 mt-0.5">
-                      <CheckCircle2 className="w-4 h-4" />
-                    </span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+              <h3 className="text-xl sm:text-2xl font-bold text-white">
+                WordPress, E-Commerce &amp; LMS Platforms
+              </h3>
+              <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
+                Building responsive, high-performing, and multilingual WordPress solutions, including e-commerce stores, LMS platforms, and corporate websites, alongside custom plugin development.
+              </p>
             </div>
           </div>
         </div>

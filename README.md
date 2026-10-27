@@ -38,7 +38,7 @@ Personal portfolio website for **Youssef Hossam** — Backend Software Engineer 
   - Personal background and engineering mindset.
   - Categorized technical competency cards (Backend, WordPress, Cloud/DevOps, Security).
   - Vertical glowing career timeline (Gen-Tech, ITI).
-  - Education & Certifications (Faculty of Science, Alexandria University & ITI 9-month Intensive Code Camp).
+  - Education & Certifications (Faculty of Science, Alexandria University & ITI Intensive Code Camp - ICC).
   - Interactive FAQ Accordion.
 
 - 💼 **Projects Page (`/projects`):**
@@ -130,7 +130,7 @@ website/
 - **Email:** [youssefhossam2902@gmail.com](mailto:youssefhossam2902@gmail.com)
 - **LinkedIn:** [linkedin.com/in/youssef-hossam](https://linkedin.com/in/youssef-hossam)
 - **GitHub:** [github.com/youssefhossam29](https://github.com/youssefhossam29)
-- **WhatsApp:** [+20 127 993 2792](https://wa.me/201279932792)
+- **WhatsApp:** [@Youssef.Hossam29](https://wa.me/@Youssef.Hossam29)
 
 ---
 

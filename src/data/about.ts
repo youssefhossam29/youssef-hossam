@@ -75,7 +75,7 @@ export const experienceData: TimelineItem[] = [
     company: "Gen-Tech Software Development Company",
     companyUrl: "https://gen-tech.io/",
     location: "Fifth Settlement, Egypt",
-    period: "06/2025 – Current",
+    period: "04/2025 – Current",
     type: "Full-Time",
     description: [
       "Architected and enhanced scalable RESTful APIs (documented via Swagger/OpenAPI) to power complex workflows.",
@@ -102,7 +102,7 @@ export const experienceData: TimelineItem[] = [
     company: "Gen-Tech Software Development Company",
     companyUrl: "https://gen-tech.io/",
     location: "Fifth Settlement, Egypt",
-    period: "10/2024 – 06/2025",
+    period: "08/2024 – 04/2025",
     type: "Full-Time",
     description: [
       "Designed responsive WordPress websites, implementing multilingual architectures and dynamic content (Custom Post Types & Loops).",
@@ -116,6 +116,28 @@ export const experienceData: TimelineItem[] = [
       "Polylang",
       "Elementor",
       "JetEngine",
+    ],
+  },
+  {
+    id: "exp-3",
+    role: "Full Stack Wordpress Developer",
+    company: "Information Technology Institute (ITI)",
+    companyUrl: "https://iti.gov.eg/",
+    location: "Alexandria, Egypt",
+    period: "05/2024 – 07/2024",
+    type: "Intensive Camp",
+    description: [
+      "Completed the Intensive Code Camp (ICC), CMS Track.",
+      "Developed full-stack web applications, focusing on both front-end and back-end development using PHP and Wordpress.",
+    ],
+    technologies: [
+      "PHP",
+      "WordPress",
+      "MySQL",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
     ],
   },
 ];
@@ -145,7 +167,7 @@ export const educationData: EducationItem[] = [
     id: "edu-2",
     degree: "Intensive Code Camp (ICC) — CMS Track",
     institution: "Information Technology Institute (ITI)",
-    period: "05/2024 – 08/2024",
+    period: "05/2024 – 07/2024",
     grade: "Distinction Graduate",
     highlights: [
       "Completed the Intensive Code Camp (ICC), CMS Track in Alexandria, Egypt.",
